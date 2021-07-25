@@ -1,0 +1,25 @@
+---
+layout: default
+title: Breakpoints
+---
+
+<h2 class="mb-4 mt-4">Breakpoints</h2>
+<ul class="list list-inside">By default, there are 3 responsive breakpoints available:
+  <li class="ml-3 mt-3 mb-2">mobile (sm): 576px</li>
+  <li class="ml-3 mb-2">tablet (md): 768px</li>
+  <li class="ml-3 mb-2">desktop (lg): 992px</li>
+</ul>
+<br>
+
+<p>To make a class only apply at a certain breakpoint, append <span class="text-sm">_sm</span>, <span class="text-sm">_md</span>, or <span class="text-sm">_lg</span> to the class name.</p>
+<br>
+
+<p>For example, consider this div: it starts out at full width when the screen size is less than the small breakpoint, and as the screen increases in size, 
+  the width is reduced at each breakpoint.  Try resizing the screen to see the effect.</p>
+<br>
+
+<p class="text-sm">.col-12 .col-6_sm .col-3_md .col-1_lg</p>
+<div class="col-12 col-6_sm col-3_md col-1_lg bg-gray-400 border p-3"></div>
+<br>
+
+<p class="text-blue text-red_sm text-yellow_md text-black_lg">This is a block of text that turns red at each breakpoint.</p>
