@@ -1,0 +1,46 @@
+---
+layout: default
+title: Breakpoints
+---
+
+<h2 class="mb-4 mt-4">Responsive Breakpoints</h2>
+<ul class="list list-inside">By default, there are 3 responsive breakpoints available:
+  <li class="ml-3 mt-3 mb-2">mobile (sm): 576px</li>
+  <li class="ml-3 mb-2">tablet (md): 768px</li>
+  <li class="ml-3 mb-2">desktop (lg): 992px</li>
+</ul>
+<br>
+
+<p>
+  To make a class only apply at a certain breakpoint, append the suffix<span class="text-sm">_sm</span>, 
+  <span class="text-sm">_md</span>, or <span class="text-sm">_lg</span> to the class name.
+</p>
+<br>
+
+<p>For example, consider the following set of columns: they start out at full width when the screen size is less than the small breakpoint, and as the screen increases in size, 
+  their width is reduced.  On mobile screens, the columns will be stacked.  On tablet screens, there will be two rows of half width columns.  On desktop screens, all four columns
+  will fit on one row.  Try resizing the screen to see the effect.</p>
+<br><br>
+
+<p class="text-sm">.container</p>
+<div class="container border p-4 bg-gray-500">
+  <p class="text-sm">.row</p>
+  <div class="row border p-3 bg-gray-400">
+    <div class="col-12 col-6_md col-3_lg border pt-3 pb-3 bg-gray-100"><p class="text-center"><p class="text-sm">.col-12 &nbsp&nbsp.col-6_md &nbsp&nbsp.col-3_lg</p></div>
+    <div class="col-12 col-6_md col-3_lg border pt-3 pb-3 bg-gray-100"><p class="text-center"><p class="text-sm">.col-12 &nbsp&nbsp.col-6_md &nbsp&nbsp.col-3_lg</p></div>
+    <div class="col-12 col-6_md col-3_lg border pt-3 pb-3 bg-gray-100"><p class="text-center"><p class="text-sm">.col-12 &nbsp&nbsp.col-6_md &nbsp&nbsp.col-3_lg</p></div>
+    <div class="col-12 col-6_md col-3_lg border pt-3 pb-3 bg-gray-100"><p class="text-center"><p class="text-sm">.col-12 &nbsp&nbsp.col-6_md &nbsp&nbsp.col-3_lg</p></div>
+  </div>
+</div>
+<br><br>
+
+<p>The use of responsive classes can be used to build websites that look good on any screen size.</p>
+<br>
+
+<p>
+  The responsive suffixes are typically used on layout classes, but can be used on any classes available. Here is an example of a block of text that changes color and 
+  size as the screen size changes: 
+</p>
+<br>
+
+<p class="h5_sm h4_md h3_lg text-black text-yellow_sm text-orange_md text-red_lg">Responsive classes are NEAT</p>
