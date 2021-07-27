@@ -1021,52 +1021,52 @@ h1 {
   }
 }
 /* border right styles */
-.border {
+.border-right {
   border-right-style: solid;
   border-color: #000;
   border-width: 0.0625rem;
 }
 
-.border-none {
+.border-right-none {
   border-right-style: none;
   border-color: #000;
   border-width: 0.0625rem;
 }
 
 @media screen and (min-width: 576px) {
-  .border_sm {
+  .border-right_sm {
     border-right-style: solid;
     border-color: #000;
     border-width: 0.0625rem;
   }
 
-  .border-none_sm {
+  .border-right-none_sm {
     border-right-style: none;
     border-color: #000;
     border-width: 0.0625rem;
   }
 }
 @media screen and (min-width: 768px) {
-  .border_md {
+  .border-right_md {
     border-right-style: solid;
     border-color: #000;
     border-width: 0.0625rem;
   }
 
-  .border-none_md {
+  .border-right-none_md {
     border-right-style: none;
     border-color: #000;
     border-width: 0.0625rem;
   }
 }
 @media screen and (min-width: 992px) {
-  .border_lg {
+  .border-right_lg {
     border-right-style: solid;
     border-color: #000;
     border-width: 0.0625rem;
   }
 
-  .border-none_lg {
+  .border-right-none_lg {
     border-right-style: none;
     border-color: #000;
     border-width: 0.0625rem;
