@@ -2218,20 +2218,12 @@ h1 {
   text-decoration: underline;
 }
 
-.link-underline:hover {
-  text-decoration: underline;
-}
-
 .link-no-underline {
   text-decoration: none;
 }
 
 @media screen and (min-width: 576px) {
   .link-underline_sm {
-    text-decoration: underline;
-  }
-
-  .link-underline:hover_sm {
     text-decoration: underline;
   }
 
@@ -2244,10 +2236,6 @@ h1 {
     text-decoration: underline;
   }
 
-  .link-underline:hover_md {
-    text-decoration: underline;
-  }
-
   .link-no-underline_md {
     text-decoration: none;
   }
@@ -2257,12 +2245,27 @@ h1 {
     text-decoration: underline;
   }
 
-  .link-underline:hover_lg {
-    text-decoration: underline;
-  }
-
   .link-no-underline_lg {
     text-decoration: none;
+  }
+}
+.link-underline-hover:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 576px) {
+  .link-underline-hover_sm:hover {
+    text-decoration: underline;
+  }
+}
+@media screen and (min-width: 768px) {
+  .link-underline-hover_md:hover {
+    text-decoration: underline;
+  }
+}
+@media screen and (min-width: 992px) {
+  .link-underline-hover_lg:hover {
+    text-decoration: underline;
   }
 }
 /**
