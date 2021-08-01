@@ -2369,16 +2369,12 @@ h1 {
   position: relative;
 }
 
-.aboslute {
+.absolute {
   position: absolute;
 }
 
 .fixed {
   position: fixed;
-}
-
-.sticky {
-  position: sticky;
 }
 
 @media screen and (min-width: 576px) {
@@ -2390,16 +2386,12 @@ h1 {
     position: relative;
   }
 
-  .aboslute_sm {
+  .absolute_sm {
     position: absolute;
   }
 
   .fixed_sm {
     position: fixed;
-  }
-
-  .sticky_sm {
-    position: sticky;
   }
 }
 @media screen and (min-width: 768px) {
@@ -2411,16 +2403,12 @@ h1 {
     position: relative;
   }
 
-  .aboslute_md {
+  .absolute_md {
     position: absolute;
   }
 
   .fixed_md {
     position: fixed;
-  }
-
-  .sticky_md {
-    position: sticky;
   }
 }
 @media screen and (min-width: 992px) {
@@ -2432,16 +2420,12 @@ h1 {
     position: relative;
   }
 
-  .aboslute_lg {
+  .absolute_lg {
     position: absolute;
   }
 
   .fixed_lg {
     position: fixed;
-  }
-
-  .sticky_lg {
-    position: sticky;
   }
 }
 .top--2 {
