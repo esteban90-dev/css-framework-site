@@ -1,0 +1,344 @@
+---
+layout: default
+title: Extension
+---
+
+<h2 class="mb-4 mt-4 text-center">Extension</h2>
+<br>
+
+<h3>Directory Structure</h3>
+<br>
+<p>
+  The framework was built with sass and roughly follows the <a href="https://www.learnhowtoprogram.com/user-interfaces/building-layouts-preprocessors/7-1-sass-architecture" target="_blank" class="link-no-underline">7-1 architecture</a>.
+</p>
+<br><br>
+<pre class="mono bg-gray-200">
+  .
+  ├── LICENSE
+  ├── README.md
+  └── stylesheets
+      ├── abstracts
+      │   ├── _functions.scss
+      │   ├── _mixins.scss
+      │   ├── README.md
+      │   └── _variables.scss
+      ├── base
+      │   ├── _base.scss
+      │   ├── _fonts.scss
+      │   ├── _helpers.scss
+      │   ├── README.md
+      │   └── _typography.scss
+      ├── components
+      │   ├── _background.scss
+      │   ├── _borders.scss
+      │   ├── _box_shadow.scss
+      │   ├── _button.scss
+      │   ├── _display.scss
+      │   ├── _flex.scss
+      │   ├── _links.scss
+      │   ├── _lists.scss
+      │   ├── _position.scss
+      │   ├── README.md
+      │   ├── _sizing.scss
+      │   ├── _spacing.scss
+      │   └── _typography.scss
+      ├── layout
+      │   ├── _footer.scss
+      │   ├── _grid.scss
+      │   ├── _header.scss
+      │   └── README.md
+      ├── main.css
+      ├── main.css.map
+      ├── main.scss
+      ├── pages
+      │   ├── _home.scss
+      │   └── README.md
+      ├── README.md
+      ├── themes
+      │   ├── _default.scss
+      │   └── README.md
+      └── vendors
+          ├── _normalize.scss
+          └── README.md
+</pre>
+<br><br><br>
+
+<h3>Sass Maps and Default Values</h3>
+<br>
+<p>
+  The easiest way to add or modify any of the provided classes is to modify the sass maps and default values that live in the <span class="mono">/stylesheets/abstracts/_variables.scss</span> file.
+</p>
+<br>
+<pre class="mono bg-gray-200 p-3" style="white-space: pre-wrap; word-wrap:break-word;">
+  $horizontal-gutter-width: 1.5rem;
+  $vertical-gutter-width: 1.5rem;
+  $column-number: 12;
+
+  $font-family-sans-serif: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+
+  $font-family-serif: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol; 
+  
+  $font-family-mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace; 
+
+  $default-font-family: $font-family-sans-serif;
+  $default-border-width: map.get( $border-widths, "0" );
+  $default-border-color: map.get( $colors, "black");
+  $default-font-size: map.get($font-sizes, "6");
+  $default-line-height: map.get($line-heights, "md");
+
+  $colors: (
+    "blue":     #0d6efd,
+    "indigo":   #6610f2,
+    "purple":   #6f42c1,
+    "pink":     #d63384,
+    "red":      #dc3545,
+    "orange":   #fd7e14,
+    "yellow":   #ffc107,
+    "green":    #198754,
+    "teal":     #20c997,
+    "cyan":     #0dcaf0,
+    "white":    #fff,
+    "gray-100": #f8f9fa,
+    "gray-200": #e9ecef,
+    "gray-300": #dee2e6,
+    "gray-400": #ced4da,
+    "gray-500": #adb5bd,
+    "gray-600": #6c757d,
+    "gray-700": #495057,
+    "gray-800": #343a40,
+    "gray-900": #212529,
+    "black":    #000
+  );
+
+  $font-sizes: (
+    "6": 1rem,
+    "5": 1.25rem,
+    "4": 1.5rem,
+    "3": 2.25rem,
+    "2": 3rem,
+    "1": 5rem
+  );
+
+  $small-font-sizes: (
+    "sm": .875rem,
+    "xs": .75rem,
+    "xxs": .625rem
+  );
+
+  $font-weights: (
+    "100": 100,
+    "200": 200,
+    "300": 300,
+    "400": 400,
+    "500": 500,
+    "600": 600,
+    "700": 700,
+    "800": 800,
+    "900": 900,
+    "normal": 400,
+    "bold": 700
+  );
+
+  $font-styles: (
+    "normal": normal,
+    "italic": italic
+  );
+
+  $line-heights: (
+    "1": 1,
+    "md": 1.25,
+    "lg": 1.5
+  );
+
+  $link-styles: (
+    "underline": underline,
+    "no-underline": none
+  );
+
+  $list-styles: (
+    null: none,
+    "numbered": roman,
+    "bulleted": disc
+  );
+
+  $list-positions: (
+    "inside": inside,
+    "outside": outside
+  );
+
+  $text-alignments: (
+    "left": left,
+    "center": center,
+    "right": right,
+    "justify": justify
+  );
+
+  $background-gradients: (
+    "1": linear-gradient(180deg, rgba(255, 255, 255, 0.329), rgba(255, 255, 255, 0)),
+    "2": linear-gradient(180deg, rgba(255, 255, 255, 0.493), rgba(255, 255, 255, 0)),
+    "3": linear-gradient(180deg, rgba(255, 255, 255, 0.747), rgba(255, 255, 255, 0))
+  );
+
+  $border-styles: (
+    null: solid,
+    "none": none
+  );
+
+  $border-widths: (
+    "0": .0625rem,
+    "1": .125rem,
+    "2": .25rem,
+    "3": .5rem,
+    "4": 1rem,
+    "5": 2rem
+  );
+
+  $border-radii: (
+    "1": .25rem,
+    "2": .5rem,
+    "3": .75rem,
+    "4": 1rem,
+    "5": 2rem
+  );
+
+  $displays: (
+    "none": "none",
+    "block": "block",
+    "inline-block": "inline-block",
+    "flex": "flex"
+  );
+
+  $flex-directions: (
+    "row": "row",
+    "col": "column",
+    "row-reverse": "row-reverse",
+    "col-reverse": "column-reverse"
+  );
+
+  $flex-wraps: (
+    "wrap": "wrap",
+    "wrap-reverse": "wrap-reverse",
+    "no-wrap": "nowrap"
+  );
+
+  $flex-justifications: (
+    "start": "flex-start",
+    "center": "center",
+    "end": "flex-end",
+    "between": "space-between",
+    "around": "space-around",
+    "evenly": "space-evenly"
+  );
+
+  $flex-alignments: (
+    "start": "flex-start",
+    "center": "center",
+    "end": "flex-end",
+    "stretch": "stretch"
+  );
+
+  $flex-align-selves: (
+    "start": "flex-start",
+    "center": "center",
+    "end": "flex-end",
+    "stretch": "stretch"
+  );
+
+  $flex-orders: (
+    "0": 0,
+    "1": 1,
+    "2": 2,
+    "3": 3,
+    "4": 4,
+    "5": 5
+  );
+
+  $positions: (
+    "static": "static",
+    "relative": "relative",
+    "absolute": "absolute",
+    "fixed": "fixed"
+  );
+
+  $position-values: (
+    "-2": -2rem,
+    "-1": -1rem,
+    "0": 0,
+    "1": 1rem,
+    "2": 2rem
+  );
+
+  $box-shadows: (
+    "none": none,
+    "sm": 0 0 .5rem map.get($colors, "gray-500"),
+    "md": 0 0 1rem map.get($colors, "gray-500"),
+    "lg": 0 0 2rem map.get($colors, "gray-500"),
+  );
+
+  $sizing-percentages: (
+    "auto": auto,
+    "0": 0%,
+    "10": 10%,
+    "20": 20%,
+    "30": 30%,
+    "40": 40%,
+    "50": 50%,
+    "60": 60%,
+    "70": 70%,
+    "80": 80%,
+    "90": 90%,
+    "100": 100%
+  );
+
+  $sizing-scales: (
+    "1": 4rem,
+    "2": 5rem,
+    "3": 6rem,
+    "4": 10rem,
+    "5": 15rem,
+    "6": 30rem,
+    "7": 50rem,
+    "8": 75rem,
+    "9": 100rem
+  );
+
+  $spacings: (
+    "0": 0rem,
+    "1": .25rem,
+    "2": .5rem,
+    "3": 1rem,
+    "4": 2rem,
+    "5": 4rem,
+    "6": 8rem
+  );
+
+  $margin-spacings: (
+    "auto": auto,
+    "0": 0rem,
+    "1": .25rem,
+    "2": .5rem,
+    "3": 1rem,
+    "4": 2rem,
+    "5": 4rem,
+    "6": 8rem
+  );
+
+  $padding-spacings: (
+    "0": 0rem,
+    "1": .25rem,
+    "2": .5rem,
+    "3": 1rem,
+    "4": 2rem,
+    "5": 4rem,
+    "6": 8rem
+  );
+
+  $breakpoints: (
+    "sm": 576px,
+    "md": 768px,
+    "lg": 992px 
+  );
+</pre>
+
+
+
