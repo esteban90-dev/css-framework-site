@@ -2214,38 +2214,22 @@ h1 {
 /**
  * Links utility classes
  */
-.link-underline {
-  text-decoration: underline;
-}
-
-.link-no-underline {
+.link-no-underline, .link-underline-hover {
   text-decoration: none;
 }
 
 @media screen and (min-width: 576px) {
-  .link-underline_sm {
-    text-decoration: underline;
-  }
-
-  .link-no-underline_sm {
+  .link-no-underline_sm, .link-underline-hover_sm {
     text-decoration: none;
   }
 }
 @media screen and (min-width: 768px) {
-  .link-underline_md {
-    text-decoration: underline;
-  }
-
-  .link-no-underline_md {
+  .link-no-underline_md, .link-underline-hover_md {
     text-decoration: none;
   }
 }
 @media screen and (min-width: 992px) {
-  .link-underline_lg {
-    text-decoration: underline;
-  }
-
-  .link-no-underline_lg {
+  .link-no-underline_lg, .link-underline-hover_lg {
     text-decoration: none;
   }
 }
@@ -2266,6 +2250,345 @@ h1 {
 @media screen and (min-width: 992px) {
   .link-underline-hover_lg:hover {
     text-decoration: underline;
+  }
+}
+.link-visited-blue:visited {
+  color: #0d6efd;
+}
+
+.link-visited-indigo:visited {
+  color: #6610f2;
+}
+
+.link-visited-purple:visited {
+  color: #6f42c1;
+}
+
+.link-visited-pink:visited {
+  color: #d63384;
+}
+
+.link-visited-red:visited {
+  color: #dc3545;
+}
+
+.link-visited-orange:visited {
+  color: #fd7e14;
+}
+
+.link-visited-yellow:visited {
+  color: #ffc107;
+}
+
+.link-visited-green:visited {
+  color: #198754;
+}
+
+.link-visited-teal:visited {
+  color: #20c997;
+}
+
+.link-visited-cyan:visited {
+  color: #0dcaf0;
+}
+
+.link-visited-white:visited {
+  color: #fff;
+}
+
+.link-visited-gray-100:visited {
+  color: #f8f9fa;
+}
+
+.link-visited-gray-200:visited {
+  color: #e9ecef;
+}
+
+.link-visited-gray-300:visited {
+  color: #dee2e6;
+}
+
+.link-visited-gray-400:visited {
+  color: #ced4da;
+}
+
+.link-visited-gray-500:visited {
+  color: #adb5bd;
+}
+
+.link-visited-gray-600:visited {
+  color: #6c757d;
+}
+
+.link-visited-gray-700:visited {
+  color: #495057;
+}
+
+.link-visited-gray-800:visited {
+  color: #343a40;
+}
+
+.link-visited-gray-900:visited {
+  color: #212529;
+}
+
+.link-visited-black:visited {
+  color: #000;
+}
+
+@media screen and (min-width: 576px) {
+  .link-visited-blue_sm:visited {
+    color: #0d6efd;
+  }
+
+  .link-visited-indigo_sm:visited {
+    color: #6610f2;
+  }
+
+  .link-visited-purple_sm:visited {
+    color: #6f42c1;
+  }
+
+  .link-visited-pink_sm:visited {
+    color: #d63384;
+  }
+
+  .link-visited-red_sm:visited {
+    color: #dc3545;
+  }
+
+  .link-visited-orange_sm:visited {
+    color: #fd7e14;
+  }
+
+  .link-visited-yellow_sm:visited {
+    color: #ffc107;
+  }
+
+  .link-visited-green_sm:visited {
+    color: #198754;
+  }
+
+  .link-visited-teal_sm:visited {
+    color: #20c997;
+  }
+
+  .link-visited-cyan_sm:visited {
+    color: #0dcaf0;
+  }
+
+  .link-visited-white_sm:visited {
+    color: #fff;
+  }
+
+  .link-visited-gray-100_sm:visited {
+    color: #f8f9fa;
+  }
+
+  .link-visited-gray-200_sm:visited {
+    color: #e9ecef;
+  }
+
+  .link-visited-gray-300_sm:visited {
+    color: #dee2e6;
+  }
+
+  .link-visited-gray-400_sm:visited {
+    color: #ced4da;
+  }
+
+  .link-visited-gray-500_sm:visited {
+    color: #adb5bd;
+  }
+
+  .link-visited-gray-600_sm:visited {
+    color: #6c757d;
+  }
+
+  .link-visited-gray-700_sm:visited {
+    color: #495057;
+  }
+
+  .link-visited-gray-800_sm:visited {
+    color: #343a40;
+  }
+
+  .link-visited-gray-900_sm:visited {
+    color: #212529;
+  }
+
+  .link-visited-black_sm:visited {
+    color: #000;
+  }
+}
+@media screen and (min-width: 768px) {
+  .link-visited-blue_md:visited {
+    color: #0d6efd;
+  }
+
+  .link-visited-indigo_md:visited {
+    color: #6610f2;
+  }
+
+  .link-visited-purple_md:visited {
+    color: #6f42c1;
+  }
+
+  .link-visited-pink_md:visited {
+    color: #d63384;
+  }
+
+  .link-visited-red_md:visited {
+    color: #dc3545;
+  }
+
+  .link-visited-orange_md:visited {
+    color: #fd7e14;
+  }
+
+  .link-visited-yellow_md:visited {
+    color: #ffc107;
+  }
+
+  .link-visited-green_md:visited {
+    color: #198754;
+  }
+
+  .link-visited-teal_md:visited {
+    color: #20c997;
+  }
+
+  .link-visited-cyan_md:visited {
+    color: #0dcaf0;
+  }
+
+  .link-visited-white_md:visited {
+    color: #fff;
+  }
+
+  .link-visited-gray-100_md:visited {
+    color: #f8f9fa;
+  }
+
+  .link-visited-gray-200_md:visited {
+    color: #e9ecef;
+  }
+
+  .link-visited-gray-300_md:visited {
+    color: #dee2e6;
+  }
+
+  .link-visited-gray-400_md:visited {
+    color: #ced4da;
+  }
+
+  .link-visited-gray-500_md:visited {
+    color: #adb5bd;
+  }
+
+  .link-visited-gray-600_md:visited {
+    color: #6c757d;
+  }
+
+  .link-visited-gray-700_md:visited {
+    color: #495057;
+  }
+
+  .link-visited-gray-800_md:visited {
+    color: #343a40;
+  }
+
+  .link-visited-gray-900_md:visited {
+    color: #212529;
+  }
+
+  .link-visited-black_md:visited {
+    color: #000;
+  }
+}
+@media screen and (min-width: 992px) {
+  .link-visited-blue_lg:visited {
+    color: #0d6efd;
+  }
+
+  .link-visited-indigo_lg:visited {
+    color: #6610f2;
+  }
+
+  .link-visited-purple_lg:visited {
+    color: #6f42c1;
+  }
+
+  .link-visited-pink_lg:visited {
+    color: #d63384;
+  }
+
+  .link-visited-red_lg:visited {
+    color: #dc3545;
+  }
+
+  .link-visited-orange_lg:visited {
+    color: #fd7e14;
+  }
+
+  .link-visited-yellow_lg:visited {
+    color: #ffc107;
+  }
+
+  .link-visited-green_lg:visited {
+    color: #198754;
+  }
+
+  .link-visited-teal_lg:visited {
+    color: #20c997;
+  }
+
+  .link-visited-cyan_lg:visited {
+    color: #0dcaf0;
+  }
+
+  .link-visited-white_lg:visited {
+    color: #fff;
+  }
+
+  .link-visited-gray-100_lg:visited {
+    color: #f8f9fa;
+  }
+
+  .link-visited-gray-200_lg:visited {
+    color: #e9ecef;
+  }
+
+  .link-visited-gray-300_lg:visited {
+    color: #dee2e6;
+  }
+
+  .link-visited-gray-400_lg:visited {
+    color: #ced4da;
+  }
+
+  .link-visited-gray-500_lg:visited {
+    color: #adb5bd;
+  }
+
+  .link-visited-gray-600_lg:visited {
+    color: #6c757d;
+  }
+
+  .link-visited-gray-700_lg:visited {
+    color: #495057;
+  }
+
+  .link-visited-gray-800_lg:visited {
+    color: #343a40;
+  }
+
+  .link-visited-gray-900_lg:visited {
+    color: #212529;
+  }
+
+  .link-visited-black_lg:visited {
+    color: #000;
   }
 }
 /**
