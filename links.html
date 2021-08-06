@@ -5,7 +5,10 @@ title: Links
 
 <h2 class="mb-4 mt-4 text-center">Links</h2>
 
-<p>By default, link styles are not modified.  To change a link's color, use the <a href="typography.html#color" class="link-no-underline">text color classes</a>.</p>
+<p>
+  By default, link styles are not modified.  To change a link's color, use the <a href="typography.html#color" class="link-no-underline">text color classes</a>.
+  When using the <span class="mono bg-gray-200">.visited-</span> classes, the same colors are available that are available for the <a href="typography.html#color" class="link-no-underline">text color classes</a>.
+</p>
 <br><br>
 <ul class="list list-inside">
   <li class="row">
@@ -19,19 +22,20 @@ title: Links
   <br>
   <li class="row">
     <div class="col-12 col-6_lg mono">
-      .link-underline
+      .link-underline-hover
     </div>
     <div class="col-12 col-6_lg">
-      <a href="#" class="link-underline sans-serif">This is a link that is underlined.</a> (default)
+      <a href="#" class="link-underline-hover sans-serif">This is a link that is only underlined when you hover over it.</a>
     </div>
   </li>
   <br>
   <li class="row">
     <div class="col-12 col-6_lg mono">
-      .link-no-underline .link-underline-hover
+      .link-visited-black
     </div>
     <div class="col-12 col-6_lg">
-      <a href="#" class="link-no-underline link-underline-hover sans-serif">This is a link that is only underlined when you hover over it.</a>
+      <a href="#" class="link-visited-black sans-serif">This is a link that turns black after you've visited it.</a>
     </div>
   </li>
+  <br>
 </ul>
