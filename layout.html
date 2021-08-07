@@ -4,104 +4,105 @@ title: Layout
 ---
 
 <h2 class="mb-4 mt-4 text-center">Layout</h2>
-          <p>A basic layout using this framework is achieved with three main parts: the container, the row, and the column.</p><br>
-          <p>The purpose of the container is to contain rows.  By default, the container has a 100% width.</p><br>
-          <p>Rows are flex containers, and are used to contain columns.  They use negative margins to counter the padding of the columns.  
-            Without the negative margins, content in nested rows/columns would not align properly.  Rows have a default vertical padding gutter of 24 pixels.
-          </p><br>
-          <p>Columns are the flex children of rows, and they contain your content.  Columns have a default horizontal padding gutter of 24 pixels.  
-            As you can see below, any combination of columns can fit into a row - once the overall widths add up to over 100%, the row will wrap the remaining columns. 
-            An auto width <span class="mono text-red">.col</span> class is also available that will expand with its contents. 
-          </p><br><br>
+<p>A basic layout using this framework is achieved with three main parts: the container, the row, and the column.</p><br>
+<p>The purpose of the container is to contain rows.  By default, the container has a 100% width.</p><br>
+<p>Rows are flex containers, and are used to contain columns.  They use negative margins to counter the padding of the columns.  
+  Without the negative margins, content in nested rows/columns would not align properly.  Rows have a default vertical padding gutter of 24 pixels.
+</p><br>
+<p>Columns are the flex children of rows, and they contain your content.  Columns have a default horizontal padding gutter of 24 pixels.  
+  As you can see below, any combination of columns can fit into a row - once the overall widths add up to over 100%, the row will wrap the remaining columns. 
+  An auto width <span class="mono text-red">.col</span> class is also available that will expand with its contents. 
+</p><br><br>
 
-          <p class="mb-2"><span class="mono text-red">.container</span></p>
-          <div class="container border p-5">
-            <p class="mb-2"><span class="mono text-red">.row</span></p>
-            <div class="row border p-4">
-              <div class="col-1 border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-1</span></p></div>
-              <div class="col-1 border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-1</span></p></div>
-              <div class="col-1 border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-1</span></p></div>
-              <div class="col-1 border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-1</span></p></div>
-              <div class="col-1 border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-1</span></p></div>
-              <div class="col-1 border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-1</span></p></div>
-              <div class="col-1 border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-1</span></p></div>
-              <div class="col-1 border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-1</span></p></div>
-              <div class="col-1 border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-1</span></p></div>
-              <div class="col-1 border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-1</span></p></div>
-              <div class="col-1 border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-1</span></p></div>
-              <div class="col-1 border pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-1</span></p></div>
-            </div>
-            <br><br><br>
-            <p class="mono text-red">.row</p>
-            <div class="row border p-4">
-              <div class="col-2 border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-2</span></p></div>
-              <div class="col-2 border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-2</span></p></div>
-              <div class="col-2 border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-2</span></p></div>
-              <div class="col-2 border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-2</span></p></div>
-              <div class="col-2 border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-2</span></p></div>
-              <div class="col-2 border pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-2</span></p></div>
-            </div>
-            <br><br><br>
-            <p class="mono text-red">.row</p>
-            <div class="row border p-4">
-              <div class="col-3 border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-3</span></p></div>
-              <div class="col-3 border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-3</span></p></div>
-              <div class="col-3 border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-3</span></p></div>
-              <div class="col-3 border pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-3</span></p></div>
-            </div>
-            <br><br><br>
-            <p class="mono text-red">.row</p>
-            <div class="row border p-4">
-              <div class="col-4 border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-4</span></p></div>
-              <div class="col-4 border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-4</span></p></div>
-              <div class="col-4 border pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-4</span></p></div>
-            </div>
-            <br><br><br>
-            <p class="mono text-red">.row</p>
-            <div class="row border p-4">
-              <div class="col-6 border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-6</span></p></div>
-              <div class="col-6 border pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-6</span></p></div>
-            </div>
-            <br><br><br>
-            <p class="mono text-red">.row</p>
-            <div class="row border p-4">
-              <div class="col-12 border pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-12</span></p></div>
-            </div>
-            <br><br><br>
-            <p class="mono text-red">.row</p>
-            <div class="row border p-4">
-              <div class="col-11 border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-11</span></p></div>
-              <div class="col-1 border pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-1</span></p></div>
-            </div>
-            <br><br><br>
-            <p class="mono text-red">.row</p>
-            <div class="row border p-4">
-              <div class="col-10 border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-10</span></p></div>
-              <div class="col-2 border pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-2</span></p></div>
-            </div>
-            <br><br><br>
-            <p class="mono text-red">.row</p>
-            <div class="row border p-4">
-              <div class="col-9 border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-9</span></p></div>
-              <div class="col-3 border pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-3</span></p></div>
-            </div>
-            <br><br><br>
-            <p class="mono text-red">.row</p>
-            <div class="row border p-4">
-              <div class="col-8 border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-8</span></p></div>
-              <div class="col-4 border pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-4</span></p></div>
-            </div>
-            <br><br><br>
-            <p class="mono text-red">.row</p>
-            <div class="row border p-4">
-              <div class="col-7 border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-7</span></p></div>
-              <div class="col-5 border pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-5</span></p></div>
-            </div>
-            <br><br><br>
-            <p class="mono text-red">.row</p>
-            <div class="row border p-4">
-              <div class="col border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col</span></p></div>
-              <div class="col-5 border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-5</span></p></div>
-              <div class="col border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col</span></p></div>
-              <div class="col-1 border pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-1</span></p></div>
-            </div>
+<p class="mb-2"><span class="mono text-red">.container</span></p>
+<div class="container border p-5">
+  <p class="mb-2"><span class="mono text-red">.row</span></p>
+  <div class="row border p-4">
+    <div class="col-1 border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-1</span></p></div>
+    <div class="col-1 border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-1</span></p></div>
+    <div class="col-1 border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-1</span></p></div>
+    <div class="col-1 border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-1</span></p></div>
+    <div class="col-1 border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-1</span></p></div>
+    <div class="col-1 border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-1</span></p></div>
+    <div class="col-1 border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-1</span></p></div>
+    <div class="col-1 border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-1</span></p></div>
+    <div class="col-1 border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-1</span></p></div>
+    <div class="col-1 border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-1</span></p></div>
+    <div class="col-1 border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-1</span></p></div>
+    <div class="col-1 border pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-1</span></p></div>
+  </div>
+  <br><br><br>
+  <p class="mono text-red">.row</p>
+  <div class="row border p-4">
+    <div class="col-2 border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-2</span></p></div>
+    <div class="col-2 border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-2</span></p></div>
+    <div class="col-2 border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-2</span></p></div>
+    <div class="col-2 border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-2</span></p></div>
+    <div class="col-2 border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-2</span></p></div>
+    <div class="col-2 border pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-2</span></p></div>
+  </div>
+  <br><br><br>
+  <p class="mono text-red">.row</p>
+  <div class="row border p-4">
+    <div class="col-3 border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-3</span></p></div>
+    <div class="col-3 border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-3</span></p></div>
+    <div class="col-3 border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-3</span></p></div>
+    <div class="col-3 border pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-3</span></p></div>
+  </div>
+  <br><br><br>
+  <p class="mono text-red">.row</p>
+  <div class="row border p-4">
+    <div class="col-4 border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-4</span></p></div>
+    <div class="col-4 border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-4</span></p></div>
+    <div class="col-4 border pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-4</span></p></div>
+  </div>
+  <br><br><br>
+  <p class="mono text-red">.row</p>
+  <div class="row border p-4">
+    <div class="col-6 border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-6</span></p></div>
+    <div class="col-6 border pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-6</span></p></div>
+  </div>
+  <br><br><br>
+  <p class="mono text-red">.row</p>
+  <div class="row border p-4">
+    <div class="col-12 border pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-12</span></p></div>
+  </div>
+  <br><br><br>
+  <p class="mono text-red">.row</p>
+  <div class="row border p-4">
+    <div class="col-11 border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-11</span></p></div>
+    <div class="col-1 border pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-1</span></p></div>
+  </div>
+  <br><br><br>
+  <p class="mono text-red">.row</p>
+  <div class="row border p-4">
+    <div class="col-10 border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-10</span></p></div>
+    <div class="col-2 border pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-2</span></p></div>
+  </div>
+  <br><br><br>
+  <p class="mono text-red">.row</p>
+  <div class="row border p-4">
+    <div class="col-9 border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-9</span></p></div>
+    <div class="col-3 border pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-3</span></p></div>
+  </div>
+  <br><br><br>
+  <p class="mono text-red">.row</p>
+  <div class="row border p-4">
+    <div class="col-8 border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-8</span></p></div>
+    <div class="col-4 border pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-4</span></p></div>
+  </div>
+  <br><br><br>
+  <p class="mono text-red">.row</p>
+  <div class="row border p-4">
+    <div class="col-7 border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-7</span></p></div>
+    <div class="col-5 border pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-5</span></p></div>
+  </div>
+  <br><br><br>
+  <p class="mono text-red">.row</p>
+  <div class="row border p-4">
+    <div class="col border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col</span></p></div>
+    <div class="col-5 border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-5</span></p></div>
+    <div class="col border-top border-bottom border-left pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col</span></p></div>
+    <div class="col-1 border pt-3 pb-3"><p class="text-center"><span class="mono text-red">.col-1</span></p></div>
+  </div>
+</div>
