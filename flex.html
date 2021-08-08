@@ -5,12 +5,15 @@ title: Flex
 
 <h2 class="mb-4 mt-4 text-center">Flex</h2>
 <p>A collection of classes are provided for both flex containers and flex items.</p><br><br>
+<p class="fw-bold display-none_md mb-4">
+  Note: this page is best viewed on a tablet or desktop. 
+</p>
 <h3>Flex container classes</h3><br><br>
 
 <h4 class="ml-5">Flex direction</h4><br><br>
 
 <p class="mono text-red pl-3">.flex-row</p>
-<div class="display-flex flex-row border-top border-right border-bottom border-left p-4 height-6">
+<div class="display-flex flex-row height-6">
   <div class="col-4 border-top border-bottom border-left p-3">flex item 1</div>
   <div class="col-4 border-top border-bottom border-left p-3">flex item 2</div>
   <div class="col-4 border-top border-bottom border-left p-3">flex item 3</div>
@@ -23,20 +26,20 @@ title: Flex
 <br><br>
 
 <p class="mono text-red pl-3">.flex-col</p>
-<div class="display-flex flex-col border-top border-right border-bottom border-left p-4">
-  <div class="col-4 border-top border-right border-left p-3">flex item 1</div>
+<div class="display-flex flex-col border-top border-right border-bottom">
+  <div class="col-4 border-right border-left p-3">flex item 1</div>
   <div class="col-4 border-top border-right border-left p-3">flex item 2</div>
   <div class="col-4 border-top border-right border-left p-3">flex item 3</div>
   <div class="col-4 border-top border-right border-left p-3">flex item 4</div>
   <div class="col-4 border-top border-right border-left p-3">flex item 5</div>
   <div class="col-4 border-top border-right border-left p-3">flex item 6</div>
   <div class="col-4 border-top border-right border-left p-3">flex item 7</div>
-  <div class="col-4 border p-3">flex item 8</div>
+  <div class="col-4 border-top border-right border-left p-3">flex item 8</div>
 </div>
 <br><br>
 
 <p class="mono text-red pl-3">.flex-row-reverse</p>
-<div class="display-flex flex-row-reverse border-top border-right border-bottom border-left p-4 height-6">
+<div class="display-flex flex-row-reverse height-6">
   <div class="col-4 border-top border-right border-bottom border-left p-3">flex item 1</div>
   <div class="col-4 border-top border-bottom border-left p-3">flex item 2</div>
   <div class="col-4 border-top border-bottom border-left p-3">flex item 3</div>
@@ -49,7 +52,7 @@ title: Flex
 <br><br>
 
 <p class="mono text-red pl-3">.flex-col-reverse</p>
-<div class="display-flex flex-col-reverse border-top border-right border-bottom border-left p-4">
+<div class="display-flex flex-col-reverse">
   <div class="col-4 border-top border-right border-bottom border-left p-3">flex item 1</div>
   <div class="col-4 border-top border-right border-left p-3">flex item 2</div>
   <div class="col-4 border-top border-right border-left p-3">flex item 3</div>
@@ -64,25 +67,25 @@ title: Flex
 <h4 class="ml-5">Flex wrap</h4><br><br>
 
 <p class="mono text-red pl-3">.flex-wrap</p>
-<div class="display-flex border-top border-right border-bottom border-left p-4 height-6 flex-wrap">
-  <div class="col-4 border-top border-right border-bottom border-left p-3">flex item 1</div>
-  <div class="col-4 border-top border-right border-bottom p-3">flex item 2</div>
-  <div class="col-4 border-top border-right border-bottom p-3">flex item 3</div>
-  <div class="col-4 border-right border-bottom border-left p-3">flex item 4</div>
+<div class="display-flex border-top border-right border-bottom border-left height-6 flex-wrap">
+  <div class="col-4 border-right border-bottom p-3">flex item 1</div>
+  <div class="col-4 border-right border-bottom p-3">flex item 2</div>
+  <div class="col-4 border-bottom p-3">flex item 3</div>
+  <div class="col-4 border-right p-3">flex item 4</div>
 </div>
 <br><br>
 
 <p class="mono text-red pl-3">.flex-wrap-reverse</p>
-<div class="display-flex border-top border-right border-bottom border-left p-4 height-6 flex-wrap-reverse">
-  <div class="col-4 border p-3">flex item 1</div>
-  <div class="col-4 border-top border-bottom p-3">flex item 2</div>
-  <div class="col-4 border p-3">flex item 3</div>
-  <div class="col-4 border-top border-right border-left p-3">flex item 4</div>
+<div class="display-flex border-top border-right border-bottom border-left height-6 flex-wrap-reverse">
+  <div class="col-4 border-right border-top p-3">flex item 1</div>
+  <div class="col-4 border-top border-right p-3">flex item 2</div>
+  <div class="col-4 border-top p-3">flex item 3</div>
+  <div class="col-4 border-right p-3">flex item 4</div>
 </div>
 <br><br>
 
 <p class="mono text-red pl-3">.flex-nowrap</p>
-<div class="display-flex border-top border-right border-bottom border-left p-4 flex-nowrap height-6">
+<div class="display-flex flex-nowrap height-6">
   <div class="col-4 border-top border-bottom border-left p-3">flex item 1</div>
   <div class="col-4 border-top border-bottom border-left p-3">flex item 2</div>
   <div class="col-4 border-top border-bottom border-left p-3">flex item 3</div>
@@ -93,73 +96,73 @@ title: Flex
 <h4 class="ml-5">Justify Content</h4><br><br>
 
 <p class="mono text-red pl-3">.justify-start</p>
-<div class="display-flex justify-start border-top border-right border-bottom border-left p-4 height-6">
-  <div class="col-2 border-top border-bottom border-left p-3">flex item 1</div>
-  <div class="col-2 border-top border-bottom border-left p-3">flex item 2</div>
-  <div class="col-2 border-top border-bottom border-left p-3">flex item 3</div>
-  <div class="col-2 border p-3">flex item 4</div>
+<div class="display-flex justify-start border-top border-right border-bottom border-left height-6">
+  <div class="col-2 border-right p-3">flex item 1</div>
+  <div class="col-2 border-right p-3">flex item 2</div>
+  <div class="col-2 border-right p-3">flex item 3</div>
+  <div class="col-2 border-right p-3">flex item 4</div>
 </div>
 <br><br>
 
 <p class="mono text-red pl-3">.justify-center</p>
-<div class="display-flex justify-center border-top border-right border-bottom border-left p-4 height-6">
-  <div class="col-2 border-top border-bottom border-left p-3">flex item 1</div>
-  <div class="col-2 border-top border-bottom border-left p-3">flex item 2</div>
-  <div class="col-2 border-top border-bottom border-left p-3">flex item 3</div>
-  <div class="col-2 border p-3">flex item 4</div>
+<div class="display-flex justify-center border-top border-right border-bottom border-left height-6">
+  <div class="col-2 border-left border-right p-3">flex item 1</div>
+  <div class="col-2 border-right p-3">flex item 2</div>
+  <div class="col-2 border-right p-3">flex item 3</div>
+  <div class="col-2 border-right p-3">flex item 4</div>
 </div>
 <br><br>
 
 <p class="mono text-red pl-3">.justify-end</p>
-<div class="display-flex justify-end border-top border-right border-bottom border-left p-4 height-6">
-  <div class="col-2 border-top border-bottom border-left p-3">flex item 1</div>
-  <div class="col-2 border-top border-bottom border-left p-3">flex item 2</div>
-  <div class="col-2 border-top border-bottom border-left p-3">flex item 3</div>
-  <div class="col-2 border p-3">flex item 4</div>
+<div class="display-flex justify-end border-top border-right border-bottom border-left height-6">
+  <div class="col-2 border-left p-3">flex item 1</div>
+  <div class="col-2 border-left p-3">flex item 2</div>
+  <div class="col-2 border-left p-3">flex item 3</div>
+  <div class="col-2 border-left p-3">flex item 4</div>
 </div>
 <br><br>
 
 <p class="mono text-red pl-3">.justify-between</p>
-<div class="display-flex justify-between border-top border-right border-bottom border-left p-4 height-6">
-  <div class="col-2 border p-3">flex item 1</div>
-  <div class="col-2 border p-3">flex item 2</div>
-  <div class="col-2 border p-3">flex item 3</div>
-  <div class="col-2 border p-3">flex item 4</div>
+<div class="display-flex justify-between border-top border-right border-bottom border-left height-6">
+  <div class="col-2 border-right p-3">flex item 1</div>
+  <div class="col-2 border-left border-right p-3">flex item 2</div>
+  <div class="col-2 border-left border-right p-3">flex item 3</div>
+  <div class="col-2 border-left p-3">flex item 4</div>
 </div>
 <br><br>
 
 <p class="mono text-red pl-3">.justify-around</p>
-<div class="display-flex justify-around border-top border-right border-bottom border-left p-4 height-6">
-  <div class="col-2 border p-3">flex item 1</div>
-  <div class="col-2 border p-3">flex item 2</div>
-  <div class="col-2 border p-3">flex item 3</div>
-  <div class="col-2 border p-3">flex item 4</div>
+<div class="display-flex justify-around border-top border-right border-bottom border-left height-6">
+  <div class="col-2 border-left border-right p-3">flex item 1</div>
+  <div class="col-2 border-left border-right p-3">flex item 2</div>
+  <div class="col-2 border-left border-right p-3">flex item 3</div>
+  <div class="col-2 border-left border-right p-3">flex item 4</div>
 </div>
 <br><br>
 
 <p class="mono text-red pl-3">.justify-evenly</p>
-<div class="display-flex justify-evenly border-top border-right border-bottom border-left p-4 height-6">
-  <div class="col-2 border p-3">flex item 1</div>
-  <div class="col-2 border p-3">flex item 2</div>
-  <div class="col-2 border p-3">flex item 3</div>
-  <div class="col-2 border p-3">flex item 4</div>
+<div class="display-flex justify-evenly border-top border-right border-bottom border-left height-6">
+  <div class="col-2 border-left border-right p-3">flex item 1</div>
+  <div class="col-2 border-left border-right p-3">flex item 2</div>
+  <div class="col-2 border-left border-right p-3">flex item 3</div>
+  <div class="col-2 border-left border-right p-3">flex item 4</div>
 </div>
 <br><br><br><br>
 
 <h4 class="ml-5">Align Items</h4><br><br>
 
 <p class="mono text-red pl-3">.align-start</p>
-<div class="display-flex align-start border-top border-right border-bottom border-left p-4 height-6">
-  <div class="col-2 border-top border-bottom border-left p-3">flex item 1</div>
-  <div class="col-2 border-top border-bottom border-left p-3">flex item 2</div>
-  <div class="col-2 border-top border-bottom border-left p-3">flex item 3</div>
-  <div class="col-2 border p-3">flex item 4</div>
+<div class="display-flex align-start border-top border-right border-bottom border-left height-6">
+  <div class="col-2 border-bottom border-right p-3">flex item 1</div>
+  <div class="col-2 border-bottom border-right p-3">flex item 2</div>
+  <div class="col-2 border-bottom border-right p-3">flex item 3</div>
+  <div class="col-2 border-bottom border-right p-3">flex item 4</div>
 </div>
 <br><br>
 
 <p class="mono text-red pl-3">.align-center</p>
-<div class="display-flex align-center border-top border-right border-bottom border-left p-4 height-6">
-  <div class="col-2 border-top border-bottom border-left p-3">flex item 1</div>
+<div class="display-flex align-center border-top border-right border-bottom border-left height-6">
+  <div class="col-2 border-top border-bottom p-3">flex item 1</div>
   <div class="col-2 border-top border-bottom border-left p-3">flex item 2</div>
   <div class="col-2 border-top border-bottom border-left p-3">flex item 3</div>
   <div class="col-2 border p-3">flex item 4</div>
@@ -167,40 +170,40 @@ title: Flex
 <br><br>
 
 <p class="mono text-red pl-3">.align-end</p>
-<div class="display-flex align-end border-top border-right border-bottom border-left p-4 height-6">
-  <div class="col-2 border-top border-bottom border-left p-3">flex item 1</div>
-  <div class="col-2 border-top border-bottom border-left p-3">flex item 2</div>
-  <div class="col-2 border-top border-bottom border-left p-3">flex item 3</div>
-  <div class="col-2 border p-3">flex item 4</div>
+<div class="display-flex align-end border-top border-right border-bottom border-left height-6">
+  <div class="col-2 border-top border-right p-3">flex item 1</div>
+  <div class="col-2 border-top border-right p-3">flex item 2</div>
+  <div class="col-2 border-top border-right p-3">flex item 3</div>
+  <div class="col-2 border-top border-right p-3">flex item 4</div>
 </div>
 <br><br>
 
 <p class="mono text-red pl-3">.align-stretch</p>
-<div class="display-flex align-stretch border-top border-right border-bottom border-left p-4 height-6">
-  <div class="col-2 border-top border-bottom border-left p-3">flex item 1</div>
-  <div class="col-2 border-top border-bottom border-left p-3">flex item 2</div>
-  <div class="col-2 border-top border-bottom border-left p-3">flex item 3</div>
-  <div class="col-2 border p-3">flex item 4</div>
+<div class="display-flex align-stretch border-top border-right border-bottom border-left height-6">
+  <div class="col-2 border-right p-3">flex item 1</div>
+  <div class="col-2 border-right p-3">flex item 2</div>
+  <div class="col-2 border-right p-3">flex item 3</div>
+  <div class="col-2 border-right p-3">flex item 4</div>
 </div>
 <br><br><br><br>
 
 <h3>Flex children classes</h3><br><br>
 
 <h4 class="ml-5">Align Self</h4><br><br>
-<div class="display-flex justify-around border-top border-right border-bottom border-left p-4 height-6">
-  <div class="col-2 border-top border-right border-bottom border-left align-self-stretch p-3"><p>flex item 1</p><p class="mono text-red mt-3">.align-self-stretch</p> (default)</div>
-  <div class="col-2 border-top border-right border-bottom border-left align-self-start p-3"><p>flex item 2</p><p class="mono text-red mt-3">.align-self-start</p></div>
+<div class="display-flex justify-around border-top border-right border-bottom border-left height-6">
+  <div class="col-2 border-right border-left align-self-stretch p-3"><p>flex item 1</p><p class="mono text-red mt-3">.align-self-stretch</p> (default)</div>
+  <div class="col-2 border-right border-bottom border-left align-self-start p-3"><p>flex item 2</p><p class="mono text-red mt-3">.align-self-start</p></div>
   <div class="col-2 border-top border-right border-bottom border-left align-self-center p-3"><p>flex item 3</p><p class="mono text-red mt-3">.align-self-center</p></div>
-  <div class="col-2 border-top border-right border-bottom border-left align-self-end p-3"><p>flex item 4</p><p class="mono text-red mt-3">.align-self-end</p></div>
+  <div class="col-2 border-top border-right border-left align-self-end p-3"><p>flex item 4</p><p class="mono text-red mt-3">.align-self-end</p></div>
 </div>
 <br><br><br><br>
 
 <h4 class="ml-5">Order</h4><br><br>
-<div class="display-flex justify-around border-top border-right border-bottom border-left p-4 height-6">
-  <div class="col-2 order-1 border-top border-right border-bottom border-left p-3"><p>flex item 1</p><p class="mono text-red mt-3">.order-1</p></div>
-  <div class="col-2 order-2 border-top border-right border-bottom border-left p-3"><p>flex item 2</p><p class="mono text-red mt-3">.order-2</p></div>
-  <div class="col-2 order-0 border-top border-right border-bottom border-left p-3"><p>flex item 3</p><p class="mono text-red mt-3">.order-0</p> (default)</div>
-  <div class="col-2 order-0 border-top border-right border-bottom border-left p-3"><p>flex item 4</p><p class="mono text-red mt-3">.order-0</p> (default)</div>
+<div class="display-flex justify-around border-top border-right border-bottom border-left height-6">
+  <div class="col-2 order-1 border-right border-left p-3"><p>flex item 1</p><p class="mono text-red mt-3">.order-1</p></div>
+  <div class="col-2 order-2 border-right border-left p-3"><p>flex item 2</p><p class="mono text-red mt-3">.order-2</p></div>
+  <div class="col-2 order-0 border-right border-left p-3"><p>flex item 3</p><p class="mono text-red mt-3">.order-0</p> (default)</div>
+  <div class="col-2 order-0 border-right border-left p-3"><p>flex item 4</p><p class="mono text-red mt-3">.order-0</p> (default)</div>
 </div>
 <br><br>
 
