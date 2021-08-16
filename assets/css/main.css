@@ -398,21 +398,29 @@ h1 {
 }
 .col {
   width: auto;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 @media screen and (min-width: 576px) {
   .col_sm {
     width: auto;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
   }
 }
 @media screen and (min-width: 768px) {
   .col_md {
     width: auto;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
   }
 }
 @media screen and (min-width: 992px) {
   .col_lg {
     width: auto;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
   }
 }
 /**
